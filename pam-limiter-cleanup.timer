@@ -1,0 +1,9 @@
+[Unit]
+Description=Run PAM Limiter Cleanup daily at 7am
+
+[Timer]
+OnCalendar=*-*-* 07:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
